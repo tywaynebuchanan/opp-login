@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --background-color: #eee;
+    --primary: #49C78D;
+    --success: #04D1B2;
+    --backrground: white;
+    --dark1:#222;
+    --bg-one:#023e8a;
+    --danger: #F03A5F;
+
+}
+
+html{
+    font-family: 'Inter',sans-serif;
+}
+
+body
+{
+    background: rgb(51,85,238);
+    background: -moz-radial-gradient(circle, rgba(51,85,238,1) 0%, rgba(2,62,138,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(51,85,238,1) 0%, rgba(2,62,138,1) 100%);
+    background: radial-gradient(circle, rgba(51,85,238,1) 0%, rgba(2,62,138,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3355ee",endColorstr="#023e8a",GradientType=1);
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.container
+{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+.container form{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: var(--backrground);
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    
+}
+
+.container form h1{
+    color: var(--dark1);
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.form-control
+{
+    width: 100%;
+    height: 40px;
+    background:var(--background);
+    border-radius: 4px;
+    border: 1px solid silver;
+    margin: 10px 0 18px 0;
+    padding: 0 10px;
+}
+
+.primary 
+{
+    background-color: var(--primary);
+    color: var(--backrground);
+}
+
+.primary-btn
+{
+    outline: none;
+    border: none;
+    width: 120px;
+    height: 34px;
+    cursor: pointer;
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    border-radius: 4px;
+    transition: .3s ease-in;
+}
+
+.container form label
+{
+    font-weight: 700;
+}
+
+.register{
+    margin-top: 10px;
+}
+.register-link
+{
+    text-decoration: none;
+    
+}
+
+/* Error Messages */
+
+.danger
+{
+    background-color: var(--danger);
+    color: #ffffff;
+}
+
+.error{
+    
+    width: 100%;
+    padding: 5px;
+    background-color: #FDE0E6;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.error p{
+    text-align: center;
+    margin: auto;
+    color: #CC1035;
+}
+
+.success
+{
+    width: 100%;
+    padding: 5px;
+    background-color: #EFFAF5;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.success p 
+{
+    text-align: center;
+    margin: auto;
+    color: #31815D;
+}
+
